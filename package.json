@@ -1,0 +1,33 @@
+{
+  "name": "table-b",
+  "version": "1.0.0",
+  "description": "text-table for Japanese",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bouzuya/table-b.git"
+  },
+  "keywords": [
+    "text",
+    "table",
+    "align",
+    "ascii",
+    "rows",
+    "tabular",
+    "text-table",
+    "eastasianwidth"
+  ],
+  "author": "bouzuya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bouzuya/table-b/issues"
+  },
+  "homepage": "https://github.com/bouzuya/table-b",
+  "dependencies": {
+    "eastasianwidth": "^0.1.0",
+    "text-table": "^0.2.0"
+  }
+}
