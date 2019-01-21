@@ -13,7 +13,7 @@ text-table for Japanese.
 
 ## Usage
 
-    var table = require('table-b');
+    var table = require('table-b').default;
 
     var message = table([
       ['いろは', '123'],

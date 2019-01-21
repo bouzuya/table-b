@@ -1,11 +1,60 @@
 import { Test, run, test } from 'beater';
 import assert from 'power-assert';
-import { add } from '../src';
+import textTable from 'text-table';
+import tableBDefaultExport, { table as tableB } from '../src';
 
 const category = '/ ';
 const tests: Test[] = [
-  test(category + 'bath.names', () => {
-    assert(3 === add(1, 2));
+  test(category + 'original text-table', () => {
+    assert.deepEqual(
+      textTable(
+        [
+          ['いろは', '123'],
+          ['abc', '456']
+        ],
+        {
+          align: ['l', 'r']
+        })
+      ,
+      [
+        'いろは  123',
+        'abc  456'
+      ].join('\n')
+    );
+  }),
+  test(category + 'table-b example', () => {
+    assert.deepEqual(
+      tableB(
+        [
+          ['いろは', '123'],
+          ['abc', '456']
+        ],
+        {
+          align: ['l', 'r']
+        }
+      ),
+      [
+        'いろは  123',
+        'abc     456'
+      ].join('\n')
+    );
+  }),
+  test(category + 'table-b default exports', () => {
+    assert.deepEqual(
+      tableBDefaultExport(
+        [
+          ['いろは', '123'],
+          ['abc', '456']
+        ],
+        {
+          align: ['l', 'r']
+        }
+      ),
+      [
+        'いろは  123',
+        'abc     456'
+      ].join('\n')
+    );
   })
 ];
 
