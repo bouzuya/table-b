@@ -9,28 +9,32 @@ text-table for Japanese.
 
 ## Installation
 
-    $ npm install table-b
+```bash
+npm install table-b
+```
 
 ## Usage
 
-    var table = require('table-b').default;
+```typescript
+import table from 'table-b';
 
-    var message = table([
-      ['いろは', '123'],
-      ['abc', '456']
-    ], {
-      align: ['l', 'r']
-    });
+const message = table([
+  ['いろは', '123'],
+  ['abc', '456']
+], {
+  align: ['l', 'r']
+});
 
-    console.log(message);
+console.log(message);
 
-    // table-b:
-    // いろは 123
-    // abc    456
+// table-b:
+// いろは 123
+// abc    456
 
-    // text-table:
-    // いろは  123
-    // abc  456
+// text-table:
+// いろは  123
+// abc  456
+```
 
 ## License
 
@@ -38,8 +42,8 @@ text-table for Japanese.
 
 ## Author
 
-[bouzuya][user] &lt;[m@bouzuya.net][mail]&gt; ([http://bouzuya.net][url])
+[bouzuya][user] &lt;[m@bouzuya.net][mail]&gt; ([https://bouzuya.net/][url])
 
 [user]: https://github.com/bouzuya
 [mail]: mailto:m@bouzuya.net
-[url]: http://bouzuya.net
+[url]: https://bouzuya.net/
