@@ -2,6 +2,7 @@
 /.nyc_output/
 /.tmp/
 /*.log
+/*.tgz
 /coverage/
 /lib/
 /node_modules/
