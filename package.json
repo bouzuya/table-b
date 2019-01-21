@@ -1,7 +1,7 @@
 {
   "name": "table-b",
   "description": "text-table for Japanese",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "bouzuya",
   "babel": {
     "presets": [
