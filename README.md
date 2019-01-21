@@ -36,6 +36,19 @@ console.log(message);
 // abc  456
 ```
 
+## Badges
+
+[![npm version][npm-badge-url]][npm-url]
+[![Travis CI][travisci-badge-url]][travisci-url]
+[![Coveralls][coveralls-badge-url]][coveralls-url]
+
+[coveralls-badge-url]: https://img.shields.io/coveralls/github/bouzuya/table-b.svg
+[coveralls-url]: https://coveralls.io/github/bouzuya/table-b
+[npm-badge-url]: https://img.shields.io/npm/v/table-b.svg
+[npm-url]: https://www.npmjs.com/package/table-b
+[travisci-badge-url]: https://travis-ci.org/bouzuya/table-b.svg?branch=master
+[travisci-url]: https://travis-ci.org/bouzuya/table-b
+
 ## License
 
 [MIT](LICENSE)
