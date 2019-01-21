@@ -3,6 +3,19 @@
   "description": "text-table for Japanese",
   "version": "1.0.0",
   "author": "bouzuya",
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "6"
+          }
+        }
+      ],
+      "power-assert"
+    ]
+  },
   "bugs": {
     "url": "https://github.com/bouzuya/table-b/issues"
   },
@@ -14,6 +27,8 @@
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
+    "@types/node": "^10.12.18",
+    "@types/power-assert": "^1.5.0",
     "babel-preset-power-assert": "^3.0.0",
     "beater": "^5.0.1",
     "coveralls": "^3.0.2",
@@ -47,7 +62,7 @@
     "build": "npm-run-all -s build:lint build:es2015 build:es5 build:lib",
     "build:es2015": "tsc",
     "build:es5": "babel --out-dir .tmp/es5/ --source-maps inline .tmp/es2015/",
-    "build:lib": "babel --copy-files --no-comments --out-dir ./ .tmp/es2015/src/",
+    "build:lib": "babel --copy-files --no-comments --out-dir ./lib/ .tmp/es2015/src/",
     "build:lint": "tslint --project tsconfig.json",
     "clean": "rimraf .nyc_output .tmp coverage lib",
     "coveralls": "nyc report --reporter text-lcov | coveralls",

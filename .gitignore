@@ -1,4 +1,7 @@
-.tmp
-*.log
-coverage
-node_modules
+/.env*
+/.nyc_output/
+/.tmp/
+/*.log
+/coverage/
+/lib/
+/node_modules/
