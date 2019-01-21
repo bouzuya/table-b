@@ -46,7 +46,7 @@ console.log(message);
 [coveralls-url]: https://coveralls.io/github/bouzuya/table-b
 [npm-badge-url]: https://img.shields.io/npm/v/table-b.svg
 [npm-url]: https://www.npmjs.com/package/table-b
-[travisci-badge-url]: https://travis-ci.org/bouzuya/table-b.svg?branch=master
+[travisci-badge-url]: https://img.shields.io/travis/bouzuya/table-b.svg
 [travisci-url]: https://travis-ci.org/bouzuya/table-b
 
 ## License
