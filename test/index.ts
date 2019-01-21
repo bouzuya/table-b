@@ -55,6 +55,24 @@ const tests: Test[] = [
         'abc     456'
       ].join('\n')
     );
+  }),
+  test(category + 'table-b don\'t use eastasianwidth', () => {
+    assert.deepEqual(
+      tableB(
+        [
+          ['いろは', '123'],
+          ['abc', '456']
+        ],
+        {
+          align: ['l', 'r'],
+          stringLength: (s) => s.length
+        }
+      ),
+      [
+        'いろは  123',
+        'abc  456'
+      ].join('\n')
+    );
   })
 ];
 
