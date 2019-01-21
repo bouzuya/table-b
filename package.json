@@ -1,33 +1,33 @@
 {
   "name": "table-b",
-  "version": "1.0.0",
   "description": "text-table for Japanese",
-  "main": "index.js",
-  "scripts": {
-    "test": "exit 0"
+  "version": "1.0.0",
+  "author": "bouzuya",
+  "bugs": {
+    "url": "https://github.com/bouzuya/table-b/issues"
   },
+  "dependencies": {
+    "eastasianwidth": "^0.1.0",
+    "text-table": "^0.2.0"
+  },
+  "homepage": "https://github.com/bouzuya/table-b",
+  "keywords": [
+    "align",
+    "ascii",
+    "eastasianwidth",
+    "rows",
+    "table",
+    "tabular",
+    "text",
+    "text-table"
+  ],
+  "license": "MIT",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/bouzuya/table-b.git"
   },
-  "keywords": [
-    "text",
-    "table",
-    "align",
-    "ascii",
-    "rows",
-    "tabular",
-    "text-table",
-    "eastasianwidth"
-  ],
-  "author": "bouzuya",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bouzuya/table-b/issues"
-  },
-  "homepage": "https://github.com/bouzuya/table-b",
-  "dependencies": {
-    "eastasianwidth": "^0.1.0",
-    "text-table": "^0.2.0"
+  "scripts": {
+    "test": "exit 0"
   }
 }
