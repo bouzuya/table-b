@@ -2,11 +2,6 @@
 
 text-table for Japanese.
 
-## Dependencies
-
-- [substack/text-table](https://github.com/substack/text-table)
-- [komagata/eastasianwidth](https://github.com/komagata/eastasianwidth)
-
 ## Installation
 
 ```bash
