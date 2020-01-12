@@ -24,7 +24,6 @@
   },
   "files": [
     "./src/index.ts",
-    "./test/index.ts",
-    "./types/eastasianwidth.d.ts"
+    "./test/index.ts"
   ]
 }

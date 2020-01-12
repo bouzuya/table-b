@@ -20,7 +20,7 @@
     "url": "https://github.com/bouzuya/table-b/issues"
   },
   "dependencies": {
-    "eastasianwidth": "^0.2.0",
+    "string-width": "^4.2.0",
     "text-table": "^0.2.0"
   },
   "devDependencies": {

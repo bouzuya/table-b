@@ -1,4 +1,4 @@
-import eaw from 'eastasianwidth';
+import stringWidth from 'string-width';
 import textTable from 'text-table';
 
 const tableB = (
@@ -12,7 +12,7 @@ const tableB = (
     ...(
       typeof options === 'undefined' ||
         typeof options.stringLength === 'undefined'
-        ? { stringLength: eaw.length.bind(eaw) }
+        ? { stringLength: stringWidth }
         : {}
     )
   });
