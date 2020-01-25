@@ -7,14 +7,14 @@ const tableB = (
     hsep?: string;
     align?: Array<'l' | 'r' | 'c' | '.'>;
     stringLength?(str: string): number;
-  }) => textTable(rows, {
+  }
+) =>
+  textTable(rows, {
     ...options,
-    ...(
-      typeof options === 'undefined' ||
-        typeof options.stringLength === 'undefined'
-        ? { stringLength: stringWidth }
-        : {}
-    )
+    ...(typeof options === 'undefined' ||
+    typeof options.stringLength === 'undefined'
+      ? { stringLength: stringWidth }
+      : {})
   });
 
 export default tableB;

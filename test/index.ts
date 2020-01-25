@@ -15,12 +15,9 @@ const tests: Test[] = [
         ],
         {
           align: ['l', 'r']
-        })
-      ,
-      [
-        'いろは  123',
-        'abc  456'
-      ].join('\n')
+        }
+      ),
+      ['いろは  123', 'abc  456'].join('\n')
     );
   }),
   test(category + 'table-b example', () => {
@@ -34,10 +31,7 @@ const tests: Test[] = [
           align: ['l', 'r']
         }
       ),
-      [
-        'いろは  123',
-        'abc     456'
-      ].join('\n')
+      ['いろは  123', 'abc     456'].join('\n')
     );
   }),
   test(category + 'table-b default exports', () => {
@@ -51,13 +45,10 @@ const tests: Test[] = [
           align: ['l', 'r']
         }
       ),
-      [
-        'いろは  123',
-        'abc     456'
-      ].join('\n')
+      ['いろは  123', 'abc     456'].join('\n')
     );
   }),
-  test(category + 'table-b don\'t use eastasianwidth', () => {
+  test(category + "table-b don't use eastasianwidth", () => {
     assert.deepEqual(
       tableB(
         [
@@ -69,10 +60,7 @@ const tests: Test[] = [
           stringLength: (s) => s.length
         }
       ),
-      [
-        'いろは  123',
-        'abc  456'
-      ].join('\n')
+      ['いろは  123', 'abc  456'].join('\n')
     );
   })
 ];
