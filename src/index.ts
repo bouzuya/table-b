@@ -8,7 +8,7 @@ const tableB = (
     align?: Array<'l' | 'r' | 'c' | '.'>;
     stringLength?(str: string): number;
   }
-) =>
+): string =>
   textTable(rows, {
     ...options,
     ...(typeof options === 'undefined' ||
